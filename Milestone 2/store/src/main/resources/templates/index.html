@@ -23,12 +23,14 @@
             <ul class="nav-one">
                 <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
                 <li><a href="#"><i class="fa fa-cart-arrow-down"></i></a></li>
-                <li><a href="/" th:href="@{/login}">Login / Register</a></li>
+                <li><a th:href="@{/login}">Login</a></li>
             </ul>
         </div>
         <div class="container">
             <div class="logo-nav">
-                <div class="logo" img= src="VinylCraze.mp4"></div>
+                   <video class="logo" width="250" height="250" autoplay muted loop>
+                    <source src="VinylCraze.mp4" type="video/mp4">Your browser does not support the video tag.
+                </video>
                 <i class="fa fa-bars fa-2x"></i>
                 <ul class="nav-two">
                     <li class="active">Home</li>
