@@ -13,12 +13,6 @@ import com.gcu.dto.UserRegistrationDto;
 @RequestMapping("/registration")
 public class RegistrationController {
 	
-//	private UserService userService;
-
-	//public RegistrationController(UserService userService) {
-//		super();
-		//this.userService = userService;
-//	}
 	
 	@ModelAttribute("user")
     public UserRegistrationDto userRegistrationDto() {

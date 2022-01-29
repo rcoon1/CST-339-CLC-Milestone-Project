@@ -19,5 +19,13 @@ public class MainController {
 	public String home() {
 		return "index";
 	}
+	@GetMapping("/aboutus")
+	public String aboutus() {
+		return "aboutus";
+	}
+	@GetMapping("/contact")
+	public String contact() {
+		return "contact";
+	}
 	
 }
