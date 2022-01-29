@@ -7,6 +7,7 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
 	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
 	crossorigin="anonymous">
+<link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
@@ -39,22 +40,22 @@
 						to VinylCraze!</div>
 				</div>
 
-				<h1>Registration</h1>
+				<h1 class="white-text">Registration</h1>
 
 				<form th:action="@{/registration}" method="post" th:object="${user}">
 					<div class="form-row">
 						<div class="col-md-4 mb-3">
-							<label for="validationDefault01">First name</label> <input
+							<label class="white-text" for="validationDefault01">First name</label> <input
 								type="text" class="form-control" id="validationDefault01"
 								placeholder="First name" value="" required>
 						</div>
 						<div class="col-md-4 mb-3">
-							<label for="validationDefault02">Last name</label> <input
+							<label class="white-text" for="validationDefault02">Last name</label> <input
 								type="text" class="form-control" id="validationDefault02"
 								placeholder="Last name" value="" required>
 						</div>
 						<div class="col-md-4 mb-3">
-							<label for="validationDefaultEmail">Email</label>
+							<label class="white-text" for="validationDefaultEmail">Email</label>
 							<div class="input-group">
 							
 								<input type="text" class="form-control"
@@ -63,24 +64,24 @@
 							</div>
 						</div>
 					</div>
-					<div class="form-row">
+					<div class="form-row" id="top-pad">
 						<div class="col-md-6 mb-3">
-							<label for="validationDefault03">City</label> <input type="text"
+							<label class="white-text" for="validationDefault03">City</label> <input type="text"
 								class="form-control" id="validationDefault03" placeholder="City"
 								required>
 						</div>
 						<div class="col-md-3 mb-3">
-							<label for="validationDefault04">State</label> <input type="text"
+							<label class="white-text" for="validationDefault04">State</label> <input type="text"
 								class="form-control" id="validationDefault04"
 								placeholder="State" required>
 						</div>
 						<div class="col-md-3 mb-3">
-							<label for="validationDefault05">Zip</label> <input type="text"
+							<label class="white-text" for="validationDefault05">Zip</label> <input type="text"
 								class="form-control" id="validationDefault05" placeholder="Zip"
 								required>
 						</div>
 					</div>
-					<div class="form-group">
+					<div class="form-group" id="top-pad">
 						<div class="form-check">
 							<input class="form-check-input" type="checkbox" value=""
 								id="invalidCheck2" required> <label
@@ -88,9 +89,9 @@
 								terms and conditions </label>
 						</div>
 					</div>
-					<button class="btn btn-primary" type="submit">Submit form</button>
+					<button style="margin-bottom: 8px;" class="btn btn-primary" type="submit">Submit form</button>
 				</form>
-				<span>Already registered? <a href="/" th:href="@{/login}">Login
+				<span class="white-text">Already registered? <a href="/" th:href="@{/login}" style="text-decoration: underline;">Login
 						here</a></span>
 			</div>
 
