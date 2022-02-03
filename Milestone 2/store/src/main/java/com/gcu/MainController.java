@@ -27,5 +27,9 @@ public class MainController {
 	public String contact() {
 		return "contact";
 	}
+	@GetMapping("/adminIndex")
+	public String adminIndex() {
+		return "adminIndex";
+	}
 	
 }

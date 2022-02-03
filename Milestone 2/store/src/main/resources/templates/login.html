@@ -49,6 +49,12 @@
 					<div th:if="${param.logout}">
 						<div class="alert alert-info">You have been logged out.</div>
 					</div>
+					
+					<!-- login redirect -->
+						<div th:if="${param.login}">
+						<div class="alert alert-info">You have been logged out.</div>
+					</div>
+				
 
 					<div class="form-group">
 						<label class="white-text" for="username"> Email: </label>  <input type="text"
@@ -66,14 +72,17 @@
 						<div class="row">
 							<div class="col-sm-6 col-sm-offset-3">
 								<input type="submit" name="login-submit" id="login-submit"
-									class="form-control btn btn-primary" value="Log In">
+									class="form-control btn btn-primary" value="Log In" >
 							</div>
 						</div>
 					</div>
 				</form>
 				<div class="form-group">
-					<span class="white-text">New user? <a href="/" th:href="@{/registration}" style="text-decoration: underline;">Register
+					<span class="white-text">New user? <a th:href="@{/registration}" style="text-decoration: underline;">Register
 							here</a></span>
+				</div>
+								<div class="form-group">
+					<span class="white-text"> <a th:href="@{/adminIndex}" style="text-decoration: underline;">Admin Login</a></span>
 				</div>
 			</div>
 		</div>
