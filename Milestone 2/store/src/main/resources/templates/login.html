@@ -38,7 +38,7 @@
 			<div class="col-md-6 col-md-offset-3">
 
 				<h1 class="white-text">Login</h1>
-				<form th:action="@{/login}" method="post">
+				<form action="#" th:action="@{adminIndex}" method="post">
 
 					<!-- error message -->
 					<div th:if="${param.error}">
@@ -82,7 +82,6 @@
 							here</a></span>
 				</div>
 								<div class="form-group">
-					<span class="white-text"> <a th:href="@{/adminIndex}" style="text-decoration: underline;">Admin Login</a></span>
 				</div>
 			</div>
 		</div>
