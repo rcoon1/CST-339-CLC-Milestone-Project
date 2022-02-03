@@ -2,6 +2,7 @@ package com.gcu.model;
 
 import org.springframework.lang.NonNull;
 
+
 public class RecordModel {
 	
 	//basic variables for records
@@ -21,6 +22,9 @@ public class RecordModel {
 	private double price;
 	
 	@NonNull
+	private String imageUrl;
+	
+	@NonNull
 	private int appId;
 	
 
@@ -28,7 +32,7 @@ public RecordModel() {
 	
 }
 
-public RecordModel(String artist, String title, String description, int decade, double price) {
+public RecordModel(String artist, String title, String description, int decade, double price, String imageUrl) {
 	
 	super();
 	this.artist = artist;
@@ -36,6 +40,7 @@ public RecordModel(String artist, String title, String description, int decade, 
 	this.description = description;
 	this.decade = decade;
 	this.price = price;
+	this.imageUrl = imageUrl;
 }
 
 public String getArtist() {
@@ -85,6 +90,16 @@ public int getAppId() {
 public void setAppId(int appId) {
 	this.appId = appId;
 }
+
+public String imageUrl() {
+	return imageUrl;
+}
+
+public void imageUrl(String imageUrl) {
+	this.imageUrl = imageUrl;
+}
+
+
 
 
 }

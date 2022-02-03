@@ -36,67 +36,63 @@
 
 				<!-- success message -->
 				<div th:if="${param.success}">
-					<div class="alert alert-info">You've successfully registered
-						to VinylCraze!</div>
+					<div class="alert alert-info">You've successfully added a product.</div>
 				</div>
 
-				<h1 class="white-text">Registration</h1>
+				<h1 class="white-text">Add Product</h1>
 
-				<form th:action="@{/registration}" method="post" th:object="${user}">
+				<form th:action="@{/addProduct}" method="post" th:object="${record}">
 					<div class="form-row">
 						<div class="col-md-4 mb-3">
-							<label class="white-text" for="validationDefault01">First
-								name</label> <input type="text" class="form-control"
-								id="validationDefault01" placeholder="First name" value=""
+							<label class="white-text" for="validationDefault01">Artist</label> <input type="text" class="form-control"
+								id="validationDefault01" placeholder="Artist" value=""
 								required>
 						</div>
 						<div class="col-md-4 mb-3">
-							<label class="white-text" for="validationDefault02">Last
-								name</label> <input type="text" class="form-control"
-								id="validationDefault02" placeholder="Last name" value=""
+							<label class="white-text" for="validationDefault02">Title</label> <input type="text" class="form-control"
+								id="validationDefault02" placeholder="Title" value=""
 								required>
 						</div>
 						<div class="col-md-4 mb-3">
-							<label class="white-text" for="validationDefaultEmail">Email</label>
+							<label class="white-text" for="validationDefaultEmail">Description</label>
 							<div class="input-group">
 
 								<input type="text" class="form-control"
-									id="validationDefaultEmail" placeholder="Email"
+									id="validationDefaultEmail" placeholder="Description"
 									aria-describedby="inputGroupPrepend2" required>
 							</div>
 						</div>
 					</div>
 					<div class="form-row" id="top-pad">
 						<div class="col-md-6 mb-3">
-							<label class="white-text" for="validationDefault03">City</label>
+							<label class="white-text" for="validationDefault03">Decade</label>
 							<input type="text" class="form-control" id="validationDefault03"
-								placeholder="City" required>
+								placeholder="Decade" required>
 						</div>
 						<div class="col-md-3 mb-3">
-							<label class="white-text" for="validationDefault04">State</label>
+							<label class="white-text" for="validationDefault04">Price</label>
 							<input type="text" class="form-control" id="validationDefault04"
-								placeholder="State" required>
+								placeholder="Price" required>
 						</div>
-						<div class="col-md-3 mb-3">
-							<label class="white-text" for="validationDefault05">Zip</label> <input
-								type="text" class="form-control" id="validationDefault05"
-								placeholder="Zip" required>
+												<div class="col-md-3 mb-3">
+							<label class="white-text" for="validationDefault04">Image URL</label>
+							<input type="text" class="form-control" id="validationDefault04"
+								placeholder="Image URL" required>
 						</div>
+
 					</div>
 					<div class="form-group" id="top-pad">
 						<div class="form-check">
 							<input class="form-check-input" type="checkbox" value=""
 								id="invalidCheck2" required> <label
-								class="form-check-label" for="invalidCheck2"> Agree to
-								terms and conditions </label>
+								class="form-check-label" for="invalidCheck2"> All information is correct? </label>
 						</div>
 					</div>
 					<button style="margin-bottom: 8px;" class="btn btn-primary"
-						type="submit">Submit form</button>
+						type="submit">Submit</button>
 				</form>
-				<span class="white-text">Already registered? <a
-					th:href="@{/login}" style="text-decoration: underline;">Login
-						here</a></span>
+				<span class="white-text"> <a
+					th:href="@{/adminIndex}" style="text-decoration: underline;">Back to Home</a></span>
 			</div>
 
 		</div>

@@ -27,9 +27,9 @@ public class MainController {
 	public String contact() {
 		return "contact";
 	}
-	@GetMapping("/test")
-	public String test() {
-		return "test";
+	@GetMapping("/adminIndex")
+	public String adminIndex() {
+		return "adminIndex";
 	}
 	
 }
