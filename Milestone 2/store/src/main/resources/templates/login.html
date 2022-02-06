@@ -38,7 +38,7 @@
 			<div class="col-md-6 col-md-offset-3">
 
 				<h1 class="white-text">Login</h1>
-				<form action="#" th:action="@{adminIndex}" method="post">
+				<form action="#" th:action="@{/adminIndex}" method="post">
 
 					<!-- error message -->
 					<div th:if="${param.error}">
@@ -80,7 +80,9 @@
 				<div class="form-group">
 					<span class="white-text">New user? <a th:href="@{/registration}" style="text-decoration: underline;">Register
 							here</a></span>
+							
 				</div>
+				<span class="white-text"><a th:href="@{/adminIndex}" style="text-decoration: underline;">Admin Login</a></span>
 								<div class="form-group">
 				</div>
 			</div>

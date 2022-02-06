@@ -31,5 +31,9 @@ public class MainController {
 	public String adminIndex() {
 		return "adminIndex";
 	}
+	@GetMapping("/records")
+	public String records() {
+		return "records";
+	}
 	
 }
